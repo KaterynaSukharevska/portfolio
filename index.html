@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myPortfolio">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Kateryna Sukharevska</title>
+
+    <!-- CDN libs -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Main styles -->
+    <link href="assets/css/normalize.css" rel="stylesheet">
+    <link href="assets/css/flexboxgrid.css" rel="stylesheet">
+    <link href="assets/css/animate_css.css" rel="stylesheet">
+    <link href="./assets/css/hamburgers.css" rel="stylesheet">
+    <link href="./assets/css/main.css" rel="stylesheet">
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</head>
+<body>
+    <section ng-view></section>
+
+    <!-- JavaScript -->
+    <script src="angular.min.js"></script>
+    <script src="angular-route.min.js"></script>
+    <script src="app/app.module.js"></script>
+    <script src="app/app.route.js"></script>
+    <script src="app/components/homePage/homePage.ctrl.js"></script>
+    <script src="app/shared/projectDirective/projectDirective.js"></script>
+</body>
+</html>
