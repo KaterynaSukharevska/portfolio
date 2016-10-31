@@ -93,54 +93,8 @@
             </div>
 
             <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                    <div class="one-project">
-                        <a href="#" class="project-box project-1">
-                            <div class="overlay-projects row middle-xs center-xs">
-                                <div class="project-name animated flipInX">
-                                    <p>Active Box</p>
-                                    <span></span>
-                                </div>
-                            </div>
-                            <!--<img src="images/project_active_box.jpg" alt="img">-->
-                        </a>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                    <div class="one-project">
-                        <a href="#" class="project-box project-2">
-                            <div class="overlay-projects row middle-xs center-xs">
-                                <div class="project-name animated flipInX">
-                                    <p>Treasure Club</p>
-                                    <span></span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                    <div class="one-project">
-                        <a href="#" class="project-box project-3">
-                            <div class="overlay-projects row middle-xs center-xs">
-                                <div class="project-name animated flipInX">
-                                    <p>Two wheels</p>
-                                    <span></span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                    <div class="one-project">
-                        <a href="#" class="project-box project-4">
-                            <div class="overlay-projects row middle-xs center-xs">
-                                <div class="project-name animated flipInX">
-                                    <p>Creative Agancy</p>
-                                    <span></span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" ng-repeat="project in projectsData">
+                    <project-directive project-text="{{project.projectText}}" project-class="{{project.projectClass}}"></project-directive>
                 </div>
             </div>
         </div>

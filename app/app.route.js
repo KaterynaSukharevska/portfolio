@@ -1,7 +1,7 @@
 (function(){
     'use strict';
 
-    angular.module("myApp").config(function ($routeProvider) {
+    angular.module("myPortfolio").config(function ($routeProvider) {
         $routeProvider
             .when('/', {
                 templateUrl : 'app/components/homePage/homePage.html',

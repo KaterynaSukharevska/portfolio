@@ -1,9 +1,30 @@
 (function(){
     'use strict';
 
-    angular.module("myApp").controller('homePage', function ($scope) {
+    angular.module("myPortfolio").controller('homePage', function ($scope) {
         $scope.title = "Home Page";
         $scope.showText = false;
+
+
+        $scope.projectsData = [
+            {
+                projectText : 'ActiveBox',
+                projectClass : 'project-1'
+            },
+            {
+                projectText : 'Treasure Clube',
+                projectClass : 'project-2'
+            },
+            {
+                projectText : 'Two wheels',
+                projectClass : 'project-3'
+            },
+            {
+                projectText : 'Creative Agancy',
+                projectClass : 'project-4'
+            }
+        ];
+
 
         /**
          * Smooth scroll
