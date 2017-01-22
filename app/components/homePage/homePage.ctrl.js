@@ -1,7 +1,7 @@
 (function(){
     'use strict';
 
-    angular.module("myPortfolio").controller('homePage', function ($scope) {
+   myApp.controller('homePage', ['$scope', function ($scope) {
         $scope.title = "Home Page";
         $scope.showText = false;
 
@@ -62,5 +62,5 @@
                 $("nav").addClass('fadeInLeft');
             }
         })
-    })
+    }])
 })();

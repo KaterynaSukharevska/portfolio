@@ -1,5 +1,5 @@
-(function(){
-    'use strict';
+'use strict';
 
-    var myApp = angular.module("myPortfolio", ['ngRoute']);
-})();
+var myApp = angular.module("myPortfolio", [
+    'ngRoute'
+]);

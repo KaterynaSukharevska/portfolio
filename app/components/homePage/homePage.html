@@ -2,23 +2,11 @@
 
     <!-- Section Full-screen -->
 
-    <section class="full-screen">
+    <section id="home" class="full-screen">
         <div class="overlay"></div>
 
         <div class="container">
             <div class="full-screen-content">
-
-                <div class="overlay-for-menu" id="overlay-for-menu">
-                    <nav role="navigation" class="nav-panel animated">
-                        <ul>
-                            <li><a href="">About</a></li>
-                            <li><a href="">why me?</a></li>
-                            <li><a href="#projects">Projects</a></li>
-                            <li><a href="">Contacts</a></li>
-                        </ul>
-                    </nav>
-                </div>
-
                 <header role="banner">
                     <button class="hamburger hamburger--collapse js-hamburger button" type="button">
                             <span class="hamburger-box">
@@ -35,6 +23,16 @@
                     </div>
                 </div>
 
+                <div class="overlay-for-menu" id="overlay-for-menu">
+                    <nav role="navigation" class="nav-panel animated">
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </div>
     </section>
@@ -43,7 +41,7 @@
 
     <!-- Section About -->
 
-    <section class="about">
+    <section id="about" class="about">
         <div class="container">
             <div class="row center-xs">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -51,29 +49,36 @@
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row center-xs">
                 <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
                     <div class="about-me" id="parent">
-                        <h4 id="h4">Мои сильные стороны</h4>
+                        <h4 id="h4">Who I am?</h4>
                         <div>
-                            <ul>
-                                <li>Я со всей вниматеьностью и отвественностью подхожу к каждому заданию, доверенному мне</li>
-                                <li>Я со всей вниматеьностью и отвественностью подхожу к каждому заданию, доверенному мне</li>
-                                <li>Я со всей вниматеьностью и отвественностью подхожу к каждому заданию, доверенному мне</li>
-                                <li>Я со всей вниматеьностью и отвественностью подхожу к каждому заданию, доверенному мне</li>
-                            </ul>
+                            <p>Hi! I’m a Kateryna Sukharevska and I’m a Junior Frontend Developer. I was born in Ukraine, now living and working in Warsaw.</p>
+                            <p>I am interested in new trends in IT and creative approaches in Frontend creation. My core values are attention to details and clean code.</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                    <div class="foto">
-                        <img src="assets/images/my_foto1.jpg" alt="foto">
-                    </div>
+                    <div class="foto"></div>
                 </div>
 
                 <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                    <div class="why-me"></div>
+                    <div class="why-me">
+                        <h4>What I know?</h4>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>jQuery</li>
+                            <li>CSS animations</li>
+                            <li>Flex-box</li>
+                            <li>Responsive Web Design</li>
+                            <li>Photoshop</li>
+                            <li>JavaScript</li>
+                            <li>Copywriting</li>
+                        </ul>
+                    </div>
                 </div>
 
             </div>
@@ -102,7 +107,7 @@
 
     <!-- Section Location-->
 
-    <section class="location">
+    <section id="contact" class="location">
         <div class="container">
             <div class="row center-xs">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -122,13 +127,10 @@
             <div class="row center-xs">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                     <h3>My contact:</h3>
-                    <div class="text">marmysha1405@gmail.com</div>
                     <div class="icons">
-                        <ul>
-                            <li><i class="fa fa-facebook-square" aria-hidden="true"></i></li>
-                            <li><a href="#" class="in">Linkedin</a></li>
-                            <li><a href="#" class="fb">Facebook</a></li>
-                        </ul>
+                        <a href=""><i class="fa fa-facebook-square fa-fw" aria-hidden="true"></i></a>
+                        <a href=""><i class="fa fa-envelope-o fa-fw" aria-hidden="true"></i></a>
+                        <a href=""><i class="fa fa-linkedin-square fa-fw" aria-hidden="true"></i></a>
                     </div>
                     <div class="text">Copyright © Kateryna Sukharevska 2016</div>
                 </div>

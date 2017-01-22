@@ -260,35 +260,33 @@ h3:after {
     padding: 100px 0 0 0;
 }
 
-.about-me h4 {
+.about h4 {
     margin: 0;
     color: #ec1a31;
     text-align: center;
     padding: 20px;
     font-size: 20px;
 }
-
-.about-me li {
-    color: #fff;
-    padding: 3px 0 3px 40px;
-    font-size: 17px;
+.about-me p {
+    color: #000000;
+    margin-bottom: 10px;
 }
-
-.about-me li:before {
-    content: '';
-    background: url("../images/red2.png") no-repeat;
+.why-me li:before {
+    content: "\f046";
+    color: #ec1a31;
     display: inline-block;
-    width: 19px;
-    height: 20px;
+    margin-right: 4px;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .foto {
-    height: 387px;
-}
-
-.foto img {
-    width: 100%;
-    border-radius: 3px;
+    min-height: 387px;
+    background: url('../images/my_foto1.jpg') no-repeat;
+    background-size: cover;
 }
 
 .about-me, .why-me, .foto {
@@ -297,8 +295,12 @@ h3:after {
 
 .about-me, .why-me {
     height: 387px;
-    background-color: #2d2b2b;
     border-radius: 3px;
+    padding: 20px 20px 0 30px;
+    font-size: 19px;
+    font-weight: 600;
+    text-align: left;
+    box-sizing: border-box;
 }
 
 /* Section Projects */
@@ -390,36 +392,33 @@ footer {
     padding: 100px 0 20px 0;
 }
 
-footer .icons ul li {
+footer h3 {
+     margin-bottom: 25px;
+}
+footer .icons {
+    margin-bottom: 20px;
+}
+
+footer .icons a {
+    color: #3e3184;
+    transition: 0.3s;
     display: inline-block;
-    margin-right: 20px;
+    border: 1px solid #3e3184;
+    border-radius: 50%;
+    padding: 7px 6px;
+    margin-right: 8px;
 }
 
-footer .icons .in,
-footer .icons .fb {
-    background: url("../images/sb2-1.png") no-repeat;
-    display: block;
-    white-space: nowrap;
-    text-indent: 100%;
-    overflow: hidden;
-    width: 34px;
-    height: 32px;
+footer .icons a:hover {
+    color: #ec1a31;
+    border: 1px solid #ec1a31;
+    transform: scale(1.2);
+    transition: all 0.3s ease-in-out;
 }
 
-footer .icons .fb {
-    background: url("../images/sb4-1.png") no-repeat;
-    width: 17px;
-    height: 35px;
-}
 
-footer .icons .in:hover {
-    background: url("../images/i-hover.png") no-repeat;
-    transition: all ease-in-out .3s;
-}
-
-footer .icons .fb:hover {
-    background: url("../images/fb-hover.png") no-repeat;
-    transition: all ease-in-out .3s;
+footer .icons a i {
+    font-size: 1.5em;
 }
 
 /* Media Queries */
@@ -454,7 +453,15 @@ footer .icons .fb:hover {
     }
 }
 
+@media only screen and (max-width: 1022px) {
+    .why-me, .about-me, .foto {
+        margin: 0 100px 20px 100px;
+    }
 
+    .foto {
+        box-shadow: none;
+    }
+}
 
 
 

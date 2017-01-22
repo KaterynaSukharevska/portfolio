@@ -1,7 +1,7 @@
 (function(){
     'use strict';
 
-    angular.module("myPortfolio").config(function ($routeProvider) {
+    myApp.config(['$routeProvider', function ($routeProvider) {
         $routeProvider
             .when('/', {
                 templateUrl : 'app/components/homePage/homePage.html',
@@ -15,5 +15,5 @@
                 templateUrl : 'app/components/projectPage/projectPage.html',
                 controller : 'projectPage'
             })
-    });
+    }]);
 })();

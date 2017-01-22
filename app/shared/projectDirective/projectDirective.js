@@ -1,7 +1,7 @@
 (function(){
     'use strict';
 
-    angular.module("myPortfolio").directive('projectDirective', function () {
+    myApp.directive('projectDirective', function () {
        return {
            restrict : 'E',
            templateUrl : 'app/shared/projectDirective/projectDirective.html',
